@@ -35,11 +35,11 @@ class Converter:
         self.conversion_buttons_frame = Frame(self.converter_frame)
         self.conversion_buttons_frame.grid(row=3, pady=10)
 
-        self.to_c_button = Button(self.conversion_buttons_frame, text="To Centigrade", bg="Khaki",
+        self.to_c_button = Button(self.conversion_buttons_frame, text="To Centigrade", bg="#FC8621",
                                   font=('Arial', '10', 'bold'), padx=10, pady=10)
         self.to_c_button.grid(row=0, column=0)
 
-        self.to_f_button = Button(self.conversion_buttons_frame, text="To Fahrenheit", bg="Khaki",
+        self.to_f_button = Button(self.conversion_buttons_frame, text="To Fahrenheit", bg="#FC8621",
                                   font=('Arial', '10', 'bold'), padx=10, pady=10)
         self.to_f_button.grid(row=0, column=1)
 
