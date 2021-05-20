@@ -29,7 +29,6 @@ class Converter:
         self.export_button.grid(row=1)
 
     def export(self):
-        print("You asked for export")
         get_export = Export(self)
         get_export.export_text.configure(text="Export text goes here")
 
@@ -58,21 +57,26 @@ class Export:
         self.export_heading.grid(row=0)
 
         # Export Text
-        self.export_text = Label(self.export_frame, text="",
-                               justify=LEFT, width=40, bg=background, wrap=250)
+        self.export_text = Label(self.export_frame, text="Enter a filename in the box below and press the save button "
+                                                         "to save your calculation history in a text file",
+                                 justify=LEFT, width=40, bg=background, wrap=250)
         self.export_text.grid(row=1)
+
+        self.export_text = Label(self.export_frame, text="If the filename you entered below already exists, its"
+                                                         "contents will be replaced with your calculation history.",
+                                 justify=LEFT, bg="#ffafaf", fg="maroon", wrap=225, padx=10)
+        self.export_text.grid(row=2)
 
         # Dismiss button
         self.dismiss_button = Button(self.export_frame, text="Dismiss", width=10, bg=background,
                                      command=partial(self.close_export, partner))
-        self.dismiss_button.grid(row=2, pady=10)
+        self.dismiss_button.grid(row=3, pady=10)
 
     def close_export(self, partner):
 
         # Put Export button back to normal
         partner.export_button.config(state=NORMAL)
         self.export_box.destroy()
-
 
 
 # main routine

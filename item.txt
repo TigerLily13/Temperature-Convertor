@@ -1,7 +1,7 @@
-first
-second
-third
-fourth
-fifth
-sixth
-seventh
+0 degrees C is 32 degrees F
+-17.8 degrees C is -0.0 degrees F
+40 degrees C is 104 degrees F
+4.4 degrees C is 39.9 degrees F
+12 degrees C is 53.6 degrees F
+24 degrees C is 75.2 degrees F
+100 degrees C is 212 degrees F
