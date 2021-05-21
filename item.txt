@@ -5,3 +5,4 @@
 12 degrees C is 53.6 degrees F
 24 degrees C is 75.2 degrees F
 100 degrees C is 212 degrees F
+1 degrees F is -17.2 degrees C
